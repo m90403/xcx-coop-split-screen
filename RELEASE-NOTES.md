@@ -1,6 +1,45 @@
 Xenoblade Chronicles X: Definitive Edition - two-player split-screen co-op
 Release notes
 
+0.1.1-alpha (public alpha 2)
+----------------------------
+For XCX Recomp 0.1.21 with game update 2.0.0. Gameplay baseline: development build V433.
+A reliability update for the host's AI companions as the guest sees them. No new features. Installing it over
+0.1.0-alpha builds the co-op program again and keeps both players' saves.
+
+Fixed and confirmed in play (two players, several sessions, plus automated runs)
+- The guest's game could close when the host changed a companion in Active Members. Changing companions,
+  several times in a row, no longer does that.
+- A companion the host had just changed in kept running in place on the guest's screen after it stopped. It now
+  stops and stands. (Automated check: 0 of about 300 samples per session, 26 of 300 before.)
+- Changing a companion and then fast travelling could lose the guest. The guest now follows the travel.
+- After a fast travel, or right after joining, the other player on foot could be shown sliding with a stiff
+  body until it boarded a Skell and got out again. It is now corrected by itself (at the join this can take about
+  two seconds).
+- After the host was defeated with the Skells destroyed and came back, the host and its companions moved with
+  stiff bodies on the guest's screen. They now walk normally.
+- A Skell boarded while the other game missed the boarding stayed kneeling and slid. It now stands up.
+
+Corrections included but NOT verified
+(neither situation came up again after the change, in play or in the automated runs, so these two have never
+been seen working; they may or may not fix the problem)
+- A companion's Skell that is shown ridden but stays in the kneeling pose on the other screen: the mod now tries
+  to wake it after about two seconds. The problem was seen once before the change and has not occurred since.
+- Very rarely the guest's game closed about half a second after "Begin Split-Screen Co-op": the mod now tries to
+  carry on instead of closing the game. The problem has not occurred since the change.
+
+Known limitations
+- The guest sees only some of the attack animations of the host's AI companions' Skells.
+- Very rarely a game closes with an error two or three seconds after it starts, before the title screen. This is
+  not caused by the co-op; start again.
+- Changing in a companion that owns a Skell was not tested on its own.
+- A destroyed Skell stays gone until it is repaired at the Barracks, as in the single-player game.
+- Join out of combat.
+- The guest's row in the host's Active Members screen must be left alone.
+- A companion removed without a replacement stays visible to the guest.
+- Two players on one PC only. Three or four players and online play are not part of this release.
+- Tested on one machine (Windows 11, 2560x1600 display, two Xbox controllers).
+
 0.1.0-alpha (public alpha 1)
 ----------------------------
 For XCX Recomp 0.1.21 with game update 2.0.0. Gameplay baseline: development build V387.

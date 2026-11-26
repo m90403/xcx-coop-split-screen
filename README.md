@@ -29,7 +29,7 @@ controller, its own character and its own save, in the same open world.
 
 ## Download
 
-Get **`XCX-Coop-Split-Screen-0.1.0-alpha.zip`** from the [Releases page](../../releases).
+Get **`XCX-Coop-Split-Screen-0.1.1-alpha.zip`** from the [Releases page](../../releases).
 
 ## Install
 
@@ -80,8 +80,8 @@ Each controller drives its own player whichever window has the focus.
 
 ## Known limitations
 
-- Sometimes the guest sees one of the host's AI companions **running in place**, or a companion's Skell kneeling or
-  sliding, most often right after the host changed companions. **A fast travel corrects it.**
+- The guest sees only some of the attack animations of the host's AI companions' Skells.
+- Very rarely a game closes with an error two or three seconds after it starts; start it again.
 - Join while both players are out of combat.
 - In the host's Active Members screen, do not remove the guest's row and do not make it the controlled character.
 - Removing a companion without putting another in its place is not shown to the guest.
