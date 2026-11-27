@@ -1,6 +1,42 @@
 Xenoblade Chronicles X: Definitive Edition - two-player split-screen co-op
 Release notes
 
+0.1.2-alpha (public alpha 3)
+----------------------------
+For XCX Recomp 0.1.21 with game update 2.0.0. Gameplay baseline: development build V459.
+An update for joining anywhere in the world and for how the host's AI companions and Skells look on the guest's
+screen. Installing it over 0.1.0-alpha or 0.1.1-alpha builds the co-op program again and keeps both players' saves.
+
+Fixed and confirmed in play (two players on one PC)
+- Starting co-op while the host stands in the open world: the guest saw no enemies until the first fast travel.
+  The enemies around the host are now shared from the start.
+- Starting co-op while the host sits in its Skell: the guest was sent to the place where the host had boarded,
+  which can be far away. The guest now arrives at the host.
+- The guest could not unlock an FN Site (the hold-A gauge stayed at 0 %). Each player now plants probes in its own
+  save.
+- A Skell that took off right after a fast travel was shown walking in the air on the other screen. It now flies.
+- After a fast travel the other player could be shown standing beside its own Skell while riding it. The pilot is
+  now put aboard (this can take about two seconds after arriving).
+- A companion of the host that fell and was put back on its feet by the game stayed in the falling pose on the
+  guest's screen (seen in a new game, after the first scene outside). It now lands.
+
+Included and checked by automated sessions; in play nothing was reported against them
+- The Skells of the host's AI companions on the guest's screen: take-off and flight, drawing weapons, attacks,
+  Arts and putting the weapons away. Before, a companion's Skell could stay in one pose for a whole fight.
+
+Known limitations
+- A Skell whose copy is built on the other screen while it has already been flying for a while may be shown on the
+  ground until it changes its flight; a take-off right after arriving is handled.
+- The host's AI companions fighting on foot were not examined in this update.
+- Very rarely a game closes with an error two or three seconds after it starts, before the title screen. This is
+  not caused by the co-op; start again.
+- A destroyed Skell stays gone until it is repaired at the Barracks, as in the single-player game.
+- Join out of combat.
+- The guest's row in the host's Active Members screen must be left alone.
+- A companion removed without a replacement stays visible to the guest.
+- Two players on one PC only. Three or four players and online play are not part of this release.
+- Tested on one machine (Windows 11, 2560x1600 display, two Xbox controllers).
+
 0.1.1-alpha (public alpha 2)
 ----------------------------
 For XCX Recomp 0.1.21 with game update 2.0.0. Gameplay baseline: development build V433.
